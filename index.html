@@ -1,1 +1,199 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turmeric Export-Import Business Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-yellow-700 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-white">Turmeric Trade Solutions</div>
+                <!-- Hamburger Menu for Mobile -->
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-yellow-300">Home</a>
+                    <a href="#about" class="text-white hover:text-yellow-300">About Us</a>
+                    <a href="#services" class="text-white hover:text-yellow-300">Services</a>
+                    <a href="#contact" class="text-white hover:text-yellow-300">Contact</a>
+                </div>
+            </div>
+            <!-- Mobile Menu (Hidden by Default) -->
+            <div id="mobile-menu" class="hidden md:hidden">
+                <a href="#home" class="block text-white py-2 hover:text-yellow-300">Home</a>
+                <a href="#about" class="block text-white py-2 hover:text-yellow-300">About Us</a>
+                <a href="#services" class="block text-white py-2 hover:text-yellow-300">Services</a>
+                <a href="#contact" class="block text-white py-2 hover:text-yellow-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center">
+        <img src="https://images.pexels.com/photos/6220708/pexels-photo-6220708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Turmeric Field" class="absolute inset-0 w-full h-full object-cover opacity-70">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative text-center text-white">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Global Turmeric Trade</h1>
+            <p class="text-xl md:text-2xl mb-8">Your trusted partner in turmeric export and import solutions</p>
+            <a href="#contact"
+                class="bg-yellow-600 text-white px-8 py-3 rounded-lg hover:bg-yellow-700 transition duration-300">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-700">About Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <img src="https://images.pexels.com/photos/7988017/pexels-photo-7988017.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Turmeric Farming" class="rounded-lg shadow-lg">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <p class="text-gray-700 mb-4">
+                        We specialize in the export and import of high-quality turmeric, sourced directly from trusted
+                        farmers. With years of experience, we ensure the best quality and timely delivery to our global
+                        clients.
+                    </p>
+                    <p class="text-gray-700">
+                        Our mission is to connect turmeric producers with international markets, ensuring fair trade and
+                        sustainable practices.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-yellow-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-700">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.pexels.com/photos/678414/pexels-photo-678414.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Turmeric Export" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4">Turmeric Export</h3>
+                    <p class="text-gray-700">We export premium-quality turmeric to global markets, ensuring the best
+                        prices and timely delivery.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.pexels.com/photos/4198711/pexels-photo-4198711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Turmeric Import" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4">Turmeric Import</h3>
+                    <p class="text-gray-700">We import turmeric for businesses looking for high-quality, organic, and
+                        sustainably sourced products.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.pexels.com/photos/1058035/pexels-photo-1058035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Quality Assurance" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-bold mb-4">Quality Assurance</h3>
+                    <p class="text-gray-700">We ensure all our turmeric products meet international quality standards
+                        and certifications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-700">Privacy Policy</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto">
+                Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your
+                personal information. We are committed to ensuring your data is secure and used only for the purposes
+                outlined in this policy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Terms and Conditions Section -->
+    <section id="terms" class="py-16 bg-yellow-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-700">Terms and Conditions</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto">
+                By using our services, you agree to our Terms and Conditions. These terms outline your rights and
+                responsibilities when engaging with our company. Please read them carefully before proceeding.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-yellow-700">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p class="text-gray-700 mb-4">Have questions or need assistance? Reach out to us!</p>
+                    <ul class="text-gray-700">
+                        <li class="mb-2">Email: info@turmetictradesolutions.com</li>
+                        <li class="mb-2">Phone: +1 (123) 456-7890</li>
+                        <li class="mb-2">Address: 123 Spice Street, Turmeric City, World</li>
+                    </ul>
+                </div>
+                <div>
+                    <form class="bg-yellow-50 p-6 rounded-lg shadow-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700">Name</label>
+                            <input type="text" id="name"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700">Email</label>
+                            <input type="email" id="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700">Message</label>
+                            <textarea id="message" rows="4"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="bg-yellow-600 text-white px-6 py-2 rounded-lg hover:bg-yellow-700 transition duration-300">Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-yellow-700 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2023 Turmeric Trade Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
